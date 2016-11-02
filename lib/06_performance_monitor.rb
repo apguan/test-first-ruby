@@ -1,5 +1,4 @@
 #measure time it takes to perform a task
-
 def measure(num=1, &block)
   durations = 0
   num.times do

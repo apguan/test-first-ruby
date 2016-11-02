@@ -5,7 +5,7 @@ class Friend
     if (who)
         "Hello, #{who}!"
     else
-        "Hello!"
+        "Hello!" 
     end
   end
 end

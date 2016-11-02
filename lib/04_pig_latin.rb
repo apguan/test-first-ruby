@@ -1,5 +1,4 @@
-#pig latin, maniuplate so that it translates normal things
-#to pig Latin
+#pig latin, maniuplate so that it translates normal things to pig Latin
 def translate(str)
     #creates array of all words in str
     split_str = str.split(" ")

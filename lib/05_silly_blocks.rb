@@ -5,7 +5,6 @@ def reverser(&block)
     split.each do |x|
         final.push(x.reverse)
     end
-
     return final.join(" ")
 end
 
