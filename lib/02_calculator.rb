@@ -32,3 +32,15 @@ end
 def power(a,b)
   return a**b
 end
+
+#factorial of a number
+def factorial(num)
+    total = 1
+    if (num == 0)
+        total = 0
+    end
+    (1..num).each do |x|
+        total *= x
+    end
+    return total
+end

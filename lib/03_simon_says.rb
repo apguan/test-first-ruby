@@ -31,11 +31,13 @@ end
 #titleize a word
 def titleize(str)
   arr = str.split(" ")
-  new_arr = []
-
-  arr.each do |x|
-    new_arr.push(x.capitalize)
+  little_words = ["and", "the", "over", "is"]
+#does in-place changes to arr
+  arr.first.capitalize!
+  arr[1..arr.length].each do |word|
+      if (!little_words.include?(word))
+          word.capitalize!
+      end
   end
-
-  return new_arr.join(" ")
+  return arr.join(" ")
 end
