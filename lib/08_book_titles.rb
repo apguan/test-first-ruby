@@ -13,7 +13,9 @@ class Book
         words.first.capitalize!
         #capitalize with rest of the words
         words[1..ending].each do |word|
-            word.capitalize! if !ignore.include?(word)
+            if (!ignore.include?(word))
+                word.capitalize!
+            end
         end
         words.join(" ")
     end
